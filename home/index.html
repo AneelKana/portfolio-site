@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aneel Kana | Portfolio</title>
   <link rel="stylesheet" href="../style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
   <header class="navbar">
@@ -25,17 +26,34 @@
     <div class="hero-text">
       <h1>Aneel Kana</h1>
       <div class="social-icons">
-        <a href="https://github.com/aneelkana" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/aneelkana" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/aneelkana" target="_blank"><img src = "../assets/gitLogo.png"></a>
+        <a href="https://linkedin.com/in/aneelkana" target="_blank"><img src = "../assets/linkedInLogo.webp"></a>
       </div>
-      <h2>AI & Software Engineer <span class="rotating-words">building smart, meaningful tools</span></h2>
-      <div class="icon-grid">
-        <div class="icon-grid-item">Python</div>
-        <div class="icon-grid-item">C++</div>
-        <div class="icon-grid-item">React</div>
-        <div class="icon-grid-item">Unity</div>
-        <!-- Add more as needed -->
+      <h2>AI & Software Engineer</h2>
+      <div class="rotating-wrapper">
+        <div class="rotating-words"></div>
       </div>
+      <section class="tech-stack">
+        <h2>Tech Stack</h2>
+        <div class="icon-grid">
+          <i class="devicon-python-plain colored" title="Python"></i>
+          <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+          <i class="devicon-java-plain colored" title="Java"></i>
+          <i class="devicon-cplusplus-plain colored" title="C++"></i>
+          <i class="devicon-csharp-plain colored" title="C#"></i>
+          <i class="devicon-c-plain colored" title="C"></i>
+          <i class="devicon-fsharp-plain colored" title="F#"></i>
+          <i class="devicon-unity-original colored" title="Unity"></i>
+          <i class="devicon-html5-plain colored" title="HTML5"></i>
+          <i class="devicon-css3-plain colored" title="CSS3"></i>
+          <i class="devicon-react-original colored" title="React"></i>
+          <i class="devicon-azure-plain colored" title="Azure"></i>
+          <i class="devicon-git-plain colored" title="Git"></i>                          
+          <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+          <!-- <i class="devicon-azuresqldatabase-plain colored" title="SQL"></i> -->
+          <!-- Add more as needed -->
+        </div>
+      </section>
     </div>
     <div class="floating-shapes">
       <span style="top: 10%; left: 20%; animation-delay: 0s;"></span>
@@ -50,5 +68,6 @@
     <div id="verse">Loading daily verse...</div>
     <script src="../js/dailyVerse.js"></script>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
