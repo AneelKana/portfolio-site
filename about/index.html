@@ -3,12 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>About | Aneel Kana</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="sayHello()">Click Me</button>
-  <script src="script.js"></script>
+  <header class="navbar">
+    <a href="/" class="logo">Aneel Kana</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/home/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/contact/">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-container">
+    <h1>About Me</h1>
+    <p>
+      I'm a passionate software developer and machine learning enthusiast who loves building smart, clean applications that make an impact.
+    </p>
+    <p>
+      I’ve worked with technologies like C++, Python, React, and Azure AI. My background includes AI-based medical tools, game development, and LLM prompt engineering.
+    </p>
+    <p>
+      I’m currently working on leveling up my portfolio and building cool stuff!
+    </p>
+  </main>
+
+  <footer class="footer">
+    <div class="daily-verse" id="verse">Loading daily verse...</div>
+  </footer>
+
+  <script src="../verse.js"></script>
 </body>
 </html>

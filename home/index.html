@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aneel Kana | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
   <header class="navbar">
     <a href="/" class="logo">Aneel Kana</a>
     <nav>
@@ -20,15 +20,35 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main class="hero">
-    <img src="pro pfp.jfif" alt="Aneel Kana" class="profile-pic" />
-    <p class="description">blah blah blah blah blah blah blah blah</p>
-  </main>
+  <div class="hero">
+    <img src="../assets/pro pfp.jfif" alt="Aneel Kana" class="hero-image">
+    <div class="hero-text">
+      <h1>Aneel Kana</h1>
+      <div class="social-icons">
+        <a href="https://github.com/aneelkana" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/aneelkana" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <h2>AI & Software Engineer <span class="rotating-words">building smart, meaningful tools</span></h2>
+      <div class="icon-grid">
+        <div class="icon-grid-item">Python</div>
+        <div class="icon-grid-item">C++</div>
+        <div class="icon-grid-item">React</div>
+        <div class="icon-grid-item">Unity</div>
+        <!-- Add more as needed -->
+      </div>
+    </div>
+    <div class="floating-shapes">
+      <span style="top: 10%; left: 20%; animation-delay: 0s;"></span>
+      <span style="top: 50%; left: 80%; animation-delay: 2s;"></span>
+      <span style="top: 80%; left: 40%; animation-delay: 4s;"></span>
+    </div>
+  </div>
 
-  <!-- Footer or Corner Text -->
-  <footer class="footer">
-    <div class="daily-verse">Daily Verse</div>
+  <div class="section-divider"></div>
+
+  <footer>
+    <div id="verse">Loading daily verse...</div>
+    <script src="../js/dailyVerse.js"></script>
   </footer>
 </body>
 </html>
