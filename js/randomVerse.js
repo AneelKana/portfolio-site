@@ -1,4 +1,4 @@
-async function getDailyVerse() {
+async function getRandomVerse() {
   const verses = [
     "john 3:16", "psalm 23:1", "romans 8:28", "philippians 4:13", "isaiah 41:10"
   ];
@@ -14,4 +14,4 @@ async function getDailyVerse() {
   }
 }
 
-getDailyVerse();
+getRandomVerse();
