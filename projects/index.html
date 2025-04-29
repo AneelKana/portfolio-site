@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>STILL A WORK IN PROGRESS</h1>
+  <!-- <h1>STILL A WORK IN PROGRESS</h1> -->
   <header class="navbar">
     <a href="/portfolio-site/" class="logo">Aneel Kana</a>
     <nav>
@@ -21,32 +21,79 @@
     </nav>
   </header>
 
+  <!-- <p class="projects-intro">A showcase of things I’ve built — from AI to game dev, each project reflects curiosity and creativity.</p> -->
   <main class="projects-container">
-    <h1>Projects</h1>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h2>AI Tumor Classifier</h2>
-        <p>Python + scikit-learn model that classifies breast cancer tumors using real-world medical datasets.</p>
+  <h1>Projects</h1>
+
+  <div class="projects-grid">
+    <!-- Project Card Example -->
+    <div class="project-card">
+      <div class="project-media">
+        <!-- Image or video -->
+        <img src="../assets/neuralAIArt.avif" alt="Tumor Classifier" />
+        <!-- OR -->
+        <!-- <video src="../assets/unity-game-demo.mp4" controls></video> -->
       </div>
-      <div class="project-card">
-        <h2>Prompt Engineering Tools</h2>
-        <p>Built a collection of prompt tuning workflows for internal LLM tools and performance testing.</p>
+      <div class="project-content">
+        <h2>AI Breast Cancer Tumor Classification</h2>
+        <p>A machine learning classification system built with Python to classify malignant vs. benign breast cancer tumors using real-world medical datasets. I collaborated on implementing multiple ML models — including logistic regression, SVM, KNN, decision trees, and neural networks — while conducting comprehensive preprocessing like feature scaling and normalization. Applied grid search to optimize performance and achieved 99.5% accuracy. Compared models based on speed, memory use, and accuracy.
+
+        </p>
+        <div class="project-footer">
+          <div class="project-buttons">
+            <a href="https://github.com/yourname/tumor-classifier" target="_blank">🔗 GitHub</a>
+          </div>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>scikit-learn</span>
+            <span>TensorFlow</span>
+            <span>Machine Learning</span>
+            <span>Data Science</span>
+            <span>Model Optimization</span>
+          </div>
+        </div>
       </div>
-      <div class="project-card">
-        <h2>Unity Game Prototype</h2>
-        <p>Created a 2D Unity platformer with C# that includes enemy AI, collision systems, and level design.</p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-media video-wrapper">
+      <video
+        src="../assets/gameTrial.mp4"
+        class="click-to-toggle"
+        preload="metadata"
+        poster="../assets/sword.png"
+        muted
+      ></video>
+      <div class="video-overlay">
+        ▶
       </div>
-      <div class="project-card">
-        <h2>Portfolio Website</h2>
-        <p>The site you're viewing right now! Hand-built using HTML, CSS, and some JS with GitHub Pages deployment.</p>
+      </div>
+      <div class="project-content">
+        <h2>Spartacus: Rise of a Gladiator</h2>
+        <p>Top down 2D game developed using Unity Engine. I collaborated with a team following Scrum methodology to organize sprints, coordinate tasks, and hit major development milestones on time. My role focused on implementing gameplay mechanics, resolving technical and performance challenges, and optimizing systems to meet design requirements. Working through these challenges strengthened my problem-solving skills and ability to adapt under tight deadlines.
+        <div class="project-footer">
+          <div class="project-buttons">
+            <a href="../downloads/unity-game.exe" download>⬇ Download</a>
+          </div>
+          <div class="tech-tags">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Scrum</span>
+            <span>Performance Optimization</span>
+            <span>Game Design</span>
+          </div>
+        </div>
+        </div> 
       </div>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="daily-verse" id="verse">Loading daily verse...</div>
+  <footer>
+    <div id="verse">Loading daily verse...</div>
+    <script src="../js/dailyVerse.js"></script>
   </footer>
 
   <script src="/portfolio-site/js/verse.js"></script>
+  <script src="../js/videoToggle.js"></script>
 </body>
 </html>
