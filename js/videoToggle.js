@@ -8,13 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
         video.play();
         if (overlay) overlay.style.display = "none";
 
-        // Expand the container smoothly
-        wrapper.style.maxHeight = "250px"; /* or whatever fits your video */
+        wrapper.style.maxHeight = "250px";
       } else {
         video.pause();
         if (overlay) overlay.style.display = "block";
 
-        // Collapse the container smoothly
         wrapper.style.maxHeight = "200px";
       }
     });
